@@ -122,6 +122,12 @@ func TestNoBranchReport(t *testing.T) {
 	if got.FullType == nil || *got.FullType != "ADLC-R" || got.TypeName == nil || *got.TypeName != "入戏旅人·缓行型" {
 		t.Fatalf("type %v %v", got.FullType, got.TypeName)
 	}
+	if _, err := svc.Patch("u1", item.ID, plan.Revision, []AnswerPatch{likert("B001", 1)}); err == nil || asCode(err).Code != "RESULT_LOCKED" {
+		t.Fatalf("finished result was changed: %v", err)
+	}
+	if again := mustReportID(t, svc, item.ID); again != got.ID {
+		t.Fatalf("report id changed %s -> %s", got.ID, again)
+	}
 }
 
 func TestIllegalH008DoesNotStick(t *testing.T) {

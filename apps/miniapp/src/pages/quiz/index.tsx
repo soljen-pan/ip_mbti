@@ -61,6 +61,11 @@ export default function QuizPage() {
     setOrder(item.base_order || [])
     setAnswers(item.answers || {})
     setPlan(next)
+    if (item.report_id) {
+      saveReport(id, item.report_id)
+      Taro.redirectTo({ url: `/pages/result/index?id=${item.report_id}` })
+      return
+    }
     if (at && map[at]) {
       setReviewId(at)
       fill(at, item.answers || {})

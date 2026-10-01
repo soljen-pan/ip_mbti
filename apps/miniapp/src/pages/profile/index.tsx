@@ -2,7 +2,7 @@ import { Input, Text, View } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { useState } from 'react'
 import PageHead from '../../components/PageHead'
-import { api, explainError, saveSession } from '../../api'
+import { api, explainError, findAccountReport, saveSession } from '../../api'
 
 const genders = [
   { value: 'female', label: '女' },
@@ -50,6 +50,12 @@ export default function ProfilePage() {
       return
     }
     try {
+      const existing = await findAccountReport()
+      if (existing) {
+        setError('这个账号已经有测试结果，不能再改。')
+        Taro.redirectTo({ url: `/pages/result/index?id=${existing}` })
+        return
+      }
       Taro.setStorageSync('ruxi-gender', gender)
       if (!skipName) Taro.setStorageSync('ruxi-nickname', name)
       const created = await api.create({

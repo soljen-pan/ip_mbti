@@ -151,6 +151,21 @@ export function saveReport(assessmentId: string, reportId: string) {
   Taro.setStorageSync('ruxi-report', JSON.stringify({ assessmentId, reportId }))
 }
 
+export async function findAccountReport() {
+  const id = loadSession()
+  if (!id) return ''
+  try {
+    const sheet = await api.assessment(id)
+    const reportId = sheet.report_id || loadReport(id)
+    if (!reportId) return ''
+    await api.report(reportId)
+    if (sheet.report_id) saveReport(id, sheet.report_id)
+    return reportId
+  } catch {
+    return ''
+  }
+}
+
 export function loadReport(assessmentId: string) {
   const raw = Taro.getStorageSync('ruxi-report')
   if (!raw) return ''

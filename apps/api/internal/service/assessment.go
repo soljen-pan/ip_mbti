@@ -184,6 +184,9 @@ func (s *Service) Patch(userID, id string, expected int, patches []AnswerPatch) 
 	if item.Revision != expected {
 		return nil, fail(409, "REVISION_CONFLICT", "答卷已更新，请刷新后再提交")
 	}
+	if item.ReportID != "" {
+		return nil, fail(409, "RESULT_LOCKED", "这份结果已经生成，不能再改答案")
+	}
 	active := item.activeMap()
 	plan := rules.BranchPlan(active)
 	h005 := enumOf(item.Answers, "H005")
@@ -294,6 +297,9 @@ func (s *Service) Defer(userID, id, branch string, expected int) (*Plan, error) 
 	}
 	if item.Revision != expected {
 		return nil, fail(409, "REVISION_CONFLICT", "答卷已更新，请刷新后再提交")
+	}
+	if item.ReportID != "" {
+		return nil, fail(409, "RESULT_LOCKED", "这份结果已经生成，不能再改答案")
 	}
 	found := false
 	for _, qid := range rules.BranchPlan(item.activeMap()) {
