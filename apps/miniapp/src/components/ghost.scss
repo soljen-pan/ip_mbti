@@ -1,0 +1,126 @@
+.ghost {
+  position: relative;
+  width: 168px;
+  height: 210px;
+  margin: 8px auto 0;
+}
+
+.ghost-compact {
+  width: 72px;
+  height: 90px;
+  margin: 0;
+  transform: scale(0.42);
+  transform-origin: left top;
+}
+
+.ghost-head,
+.ghost-leg {
+  background: #8f9aab;
+}
+
+.ghost-head {
+  position: absolute;
+  left: 34px;
+  top: 8px;
+  width: 100px;
+  height: 92px;
+  border-radius: 48px 52px 42px 46px;
+  z-index: 2;
+}
+
+.ghost-eye {
+  position: absolute;
+  top: 34px;
+  width: 14px;
+  height: 18px;
+  border-radius: 50%;
+  background: #232323;
+}
+
+.ghost-eye-l { left: 24px; height: 14px; }
+.ghost-eye-r { right: 22px; transform: rotate(8deg); }
+
+.ghost-mouth {
+  position: absolute;
+  left: 38px;
+  bottom: 22px;
+  width: 28px;
+  height: 10px;
+  border-bottom: 3px solid #232323;
+  border-radius: 0 0 16px 8px;
+  transform: rotate(-8deg);
+}
+
+.ghost-body {
+  position: absolute;
+  left: 46px;
+  top: 84px;
+  width: 76px;
+  height: 86px;
+  border-radius: 18px 22px 16px 20px;
+  background: #6952d9;
+  z-index: 1;
+}
+
+.ghost-body::before,
+.ghost-body::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  width: 16px;
+  height: 42px;
+  border-radius: 10px;
+  background: #8f9aab;
+}
+
+.ghost-body::before { left: -12px; }
+.ghost-body::after { right: -12px; }
+
+.ghost-badge {
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  min-width: 28px;
+  height: 16px;
+  border-radius: 4px;
+  background: #d8f35e;
+  color: #232323;
+  font-size: 9px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 760;
+}
+
+.ghost-leg {
+  position: absolute;
+  top: 162px;
+  width: 16px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.ghost-leg-l { left: 62px; }
+.ghost-leg-r { left: 92px; }
+
+.ghost-script {
+  position: absolute;
+  left: 8px;
+  top: 118px;
+  width: 28px;
+  height: 36px;
+  border-radius: 3px;
+  background: #f7f1e4;
+  border: 2px solid #232323;
+  transform: rotate(-12deg);
+  z-index: 3;
+}
+
+.ghost-script::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 4px;
+  width: 8px;
+  height: 14px;
+  background: #f47b62;
+}

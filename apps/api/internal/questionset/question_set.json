@@ -1,0 +1,1633 @@
+{
+  "question_version": "adaptive-2.1",
+  "score_version": "score-2.1",
+  "branch_version": "branch-2.1",
+  "copy_version": "copy-2.1",
+  "prompts": {
+    "opening": "基础60题，你的选择可能开启补充情境，完整测试最多100题，可随时暂停。按自己通常怎样玩来答，不必选择看起来更好的答案。",
+    "courage": "以下问面对惊吓时通常怎样反应，不是想不想体验刺激。想象任务适合身体条件、规则允许、不包含你明确拒绝的项目；参考同一类昏暗、突发声响和NPC出现的场景。没经验可以想象，也可以选无法判断。",
+    "emotion": "请按看现场故事演绎时通常的反应回答，不按NPC突然惊吓、疼痛、身体不适或“别人期望你感动”的情况作答。此处问反应，不评价是否懂剧情、是否善良，也不暗示哭过的人适合悲伤主题。",
+    "play_prefix": "对于以下体验，你通常是什么态度？"
+  },
+  "h008_by_parent": {
+    "independent": [
+      {
+        "value": "G",
+        "label": "心里基本不怕也不太叫，任务照做"
+      },
+      {
+        "value": "M",
+        "label": "会怕或会叫，但仍敢做任务"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "accompanied": [
+      {
+        "value": "S",
+        "label": "害怕时容易叫出声，需要陪同"
+      },
+      {
+        "value": "Q",
+        "label": "害怕时安静或失声，需要陪同"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ]
+  },
+  "option_sets": {
+    "L5": [
+      {
+        "value": 1,
+        "label": "非常不符合"
+      },
+      {
+        "value": 2,
+        "label": "比较不符合"
+      },
+      {
+        "value": 3,
+        "label": "居中 / 看情况"
+      },
+      {
+        "value": 4,
+        "label": "比较符合"
+      },
+      {
+        "value": 5,
+        "label": "非常符合"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "ACCEPT": [
+      {
+        "value": "love",
+        "label": "喜欢"
+      },
+      {
+        "value": "accept",
+        "label": "可以接受"
+      },
+      {
+        "value": "avoid",
+        "label": "尽量避免"
+      },
+      {
+        "value": "no",
+        "label": "不接受"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "B056": [
+      {
+        "value": "independent",
+        "label": "独立尝试"
+      },
+      {
+        "value": "accompany",
+        "label": "希望有人陪同"
+      },
+      {
+        "value": "as_needed",
+        "label": "先尝试，必要时求助"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H005": [
+      {
+        "value": "independent",
+        "label": "即使害怕也独自接下尝试"
+      },
+      {
+        "value": "accompanied",
+        "label": "需要陪同才敢做，否则倾向不接"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H006": [
+      {
+        "value": "calm",
+        "label": "基本不怕"
+      },
+      {
+        "value": "fear",
+        "label": "会明显害怕"
+      },
+      {
+        "value": "mixed",
+        "label": "随环节变化"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H007": [
+      {
+        "value": "vocal",
+        "label": "叫出声"
+      },
+      {
+        "value": "quiet",
+        "label": "安静或失声"
+      },
+      {
+        "value": "mixed",
+        "label": "两种都常见"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H013": [
+      {
+        "value": "none",
+        "label": "不参加"
+      },
+      {
+        "value": "optional",
+        "label": "可选择参加"
+      },
+      {
+        "value": "required",
+        "label": "接受本人必做"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H014": [
+      {
+        "value": "low",
+        "label": "低"
+      },
+      {
+        "value": "medium",
+        "label": "中"
+      },
+      {
+        "value": "high",
+        "label": "高"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H015": [
+      {
+        "value": "low",
+        "label": "低"
+      },
+      {
+        "value": "medium",
+        "label": "中"
+      },
+      {
+        "value": "high",
+        "label": "高"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H016": [
+      {
+        "value": "reduce",
+        "label": "事先安排可降低强度"
+      },
+      {
+        "value": "exit",
+        "label": "需要可退出路径"
+      },
+      {
+        "value": "check",
+        "label": "先了解具体环节再决定"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H017": [
+      {
+        "value": "quiet",
+        "label": "安静观演"
+      },
+      {
+        "value": "in_world",
+        "label": "适时剧内回应"
+      },
+      {
+        "value": "open",
+        "label": "可接受题外评论"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H018": [
+      {
+        "value": "none",
+        "label": "不主动玩"
+      },
+      {
+        "value": "break",
+        "label": "休息或演绎结束"
+      },
+      {
+        "value": "open_interaction",
+        "label": "开放互动时"
+      },
+      {
+        "value": "anytime",
+        "label": "任何时段"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H019": [
+      {
+        "value": "low",
+        "label": "少量"
+      },
+      {
+        "value": "some",
+        "label": "适量"
+      },
+      {
+        "value": "high",
+        "label": "较多"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H020": [
+      {
+        "value": "yes",
+        "label": "愿意"
+      },
+      {
+        "value": "no",
+        "label": "不愿意"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H021": [
+      {
+        "value": "later",
+        "label": "结束再说"
+      },
+      {
+        "value": "in_world",
+        "label": "等开放互动再改成剧内说法"
+      },
+      {
+        "value": "whisper",
+        "label": "立即小声告诉队友"
+      },
+      {
+        "value": "say",
+        "label": "立即说出来"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H022": [
+      {
+        "value": "follow",
+        "label": "跟随故事"
+      },
+      {
+        "value": "ask_window",
+        "label": "询问何时可自由聊"
+      },
+      {
+        "value": "continue",
+        "label": "继续自己的题外话"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H023": [
+      {
+        "value": "pause",
+        "label": "暂停题外交流"
+      },
+      {
+        "value": "discuss_after",
+        "label": "结束再协商"
+      },
+      {
+        "value": "continue",
+        "label": "继续表达"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H024": [
+      {
+        "value": "yes",
+        "label": "愿意"
+      },
+      {
+        "value": "no",
+        "label": "不愿意"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H025": [
+      {
+        "value": "accompany",
+        "label": "愿意陪同"
+      },
+      {
+        "value": "lead_rear",
+        "label": "愿意带路或殿后"
+      },
+      {
+        "value": "check_only",
+        "label": "只愿意帮忙确认信息"
+      },
+      {
+        "value": "none",
+        "label": "暂不提供"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H026": [
+      {
+        "value": "always",
+        "label": "任务期间一直陪同"
+      },
+      {
+        "value": "checkpoints",
+        "label": "在关键位置等候"
+      },
+      {
+        "value": "on_request",
+        "label": "我求助时再来"
+      },
+      {
+        "value": "none",
+        "label": "不需要"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H027": [
+      {
+        "value": "rotate",
+        "label": "轮流"
+      },
+      {
+        "value": "choose",
+        "label": "分开选择"
+      },
+      {
+        "value": "first",
+        "label": "优先我参与"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H028": [
+      {
+        "value": "timebox",
+        "label": "约定探索时间"
+      },
+      {
+        "value": "split",
+        "label": "场馆允许时分工"
+      },
+      {
+        "value": "uniform",
+        "label": "保持全队一致"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H029": [
+      {
+        "value": "one",
+        "label": "只一个事先约定任务"
+      },
+      {
+        "value": "selected",
+        "label": "几个指定任务"
+      },
+      {
+        "value": "throughout",
+        "label": "可商量全程"
+      },
+      {
+        "value": "none",
+        "label": "不提供"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H030": [
+      {
+        "value": "reschedule",
+        "label": "先协商错开或更换安排"
+      },
+      {
+        "value": "one",
+        "label": "只承诺一个"
+      },
+      {
+        "value": "all",
+        "label": "声称都可以"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H031": [
+      {
+        "value": "stop",
+        "label": "先停下再协商"
+      },
+      {
+        "value": "check_once",
+        "label": "确认一次后尊重"
+      },
+      {
+        "value": "keep_persuading",
+        "label": "继续劝说"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ],
+    "H032": [
+      {
+        "value": "yes",
+        "label": "愿意"
+      },
+      {
+        "value": "no",
+        "label": "不愿意"
+      },
+      {
+        "value": "unknown",
+        "label": "无法判断"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "B001",
+      "text": "NPC向全队开放提问时，我通常想主动接话。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "interaction",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B002",
+      "text": "有可选的角色扮演环节时，我希望有自己的表达机会。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "interaction",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B003",
+      "text": "我享受与NPC来回对话，让互动持续一会儿。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "interaction",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B004",
+      "text": "即使有充分发言机会，我也更喜欢在旁观察别人如何互动。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "interaction",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B005",
+      "text": "相比承担长段角色对话，我更喜欢不需要频繁开口的参与方式。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "interaction",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B006",
+      "text": "当故事与操作环节需要取舍时，我通常更想完整体验故事。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "focus",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B007",
+      "text": "选择主题时，人物关系和故事设定比机关数量更吸引我。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "focus",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B008",
+      "text": "即使暂时没有操作任务，精彩演绎也能让我满足。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "focus",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B009",
+      "text": "比起较长的演绎，我更希望尽快出现可亲手完成的任务。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "focus",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B010",
+      "text": "如果时间有限，我更愿意多玩一项任务，少看一段非关键演绎。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "focus",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B011",
+      "text": "明确知道下一步目标，会让我更享受过程。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "route",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B012",
+      "text": "相比同时开放多个方向，我更喜欢线索逐步展开的路线。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "route",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B013",
+      "text": "主线与可选探索同时出现时，我通常更想先推进主线。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "route",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B014",
+      "text": "在明确允许探索的区域，我喜欢寻找主线之外的发现。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "route",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B015",
+      "text": "可以自行决定任务顺序，会增加我的乐趣。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "route",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B016",
+      "text": "在场馆和身体条件允许时，我通常想选择较刺激的体验档位。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "intensity",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B017",
+      "text": "紧张和压迫的过程本身就是我期待的乐趣。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "intensity",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B018",
+      "text": "即使不用跑动，我也喜欢较强的恐怖氛围。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "intensity",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B019",
+      "text": "相比持续紧张，我更喜欢强度温和、可调节的体验。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "intensity",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B020",
+      "text": "其他内容相同时，我更愿意选择突发惊吓较少的版本。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "intensity",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B021",
+      "text": "假设惊吓可接受，跑动和躲避本身会增加我的乐趣。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "movement",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B022",
+      "text": "同一任务能用静态操作或身体行动完成时，我更想选身体行动。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "movement",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B023",
+      "text": "即使没有恐怖元素，我也喜欢限时移动和躲避的玩法。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "movement",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B024",
+      "text": "即使不会害怕、也不会太累，我仍更愿意选择少跑动的版本。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "movement",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B025",
+      "text": "其他内容相同时，我更愿意选择整场活动量较低的版本。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "movement",
+      "activation": "base",
+      "module": "preference",
+      "branch": ""
+    },
+    {
+      "id": "B026",
+      "text": "即使暂时没有我的任务，我也会持续关注人物之间发生了什么。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "immersion",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B027",
+      "text": "我喜欢从自己扮演角色的处境理解事件。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "immersion",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B028",
+      "text": "体验过程中，我通常很少产生角色代入感。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "immersion",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B029",
+      "text": "即使演绎很吸引人，我仍更习惯作为故事外的旁观者。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "immersion",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B030",
+      "text": "发现关键线索时，我愿意及时与队友分享。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "cooperation",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B031",
+      "text": "我和队友都想参加同一环节时，我愿意协商或轮流。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "cooperation",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B032",
+      "text": "即使别人也想尝试，我仍更想自己连续完成喜欢的互动。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "cooperation",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B033",
+      "text": "调整玩法会减少我的乐趣时，我通常不太愿意为共同节奏作调整。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "cooperation",
+      "activation": "base",
+      "module": "engagement",
+      "branch": ""
+    },
+    {
+      "id": "B034",
+      "text": "与NPC对话时，我喜欢按自己在故事中的身份回应。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "narrative",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B035",
+      "text": "即使想开玩笑，我也更喜欢使用符合当前世界观的说法。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "narrative",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B036",
+      "text": "对我来说，用现实生活和网络中的梗回应NPC是重要乐趣。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "narrative",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B037",
+      "text": "相比一直保持角色身份，我更喜欢穿插现实中的吐槽。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "narrative",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B038",
+      "text": "想到题外话时，我通常愿意等关键演绎结束后再分享。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "timing",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B039",
+      "text": "NPC将话题引回故事时，我愿意跟随这个方向继续互动。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "timing",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B040",
+      "text": "队友表示想认真看完这段时，我愿意暂停插话。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "timing",
+      "activation": "base",
+      "module": "narrative",
+      "branch": ""
+    },
+    {
+      "id": "B041",
+      "text": "任务需要我独自进入有恐怖氛围的房间时，即使没人陪同，我通常也会接下任务。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "D",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B042",
+      "text": "队友因为害怕不敢做任务时，我通常敢陪着对方进入任务区域。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "D",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B043",
+      "text": "队伍经过可能出现NPC的区域时，我会因为害怕而尽量待在前后都有人的位置。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "D",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B044",
+      "text": "即使任务步骤已经清楚，只要需要独自面对惊吓，我通常还是不敢接。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "D",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B045",
+      "text": "NPC突然出现时，我内心会明显害怕，即使外表没有表现出来。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "F",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B046",
+      "text": "一次突然的声音惊吓结束后，我通常还会害怕一阵子。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "F",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B047",
+      "text": "知道是密室表演时，即使NPC努力营造压迫感，我心里通常也很平静。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "F",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B048",
+      "text": "突然被吓到时，我的第一反应经常是叫出声。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "E",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B049",
+      "text": "昏暗环境中出现一点意外声响，我也容易忍不住叫出来。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "E",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B050",
+      "text": "即使心里很害怕，我也常常安静、僵住或想说却说不出来。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "E",
+      "activation": "base",
+      "module": "courage",
+      "branch": ""
+    },
+    {
+      "id": "B051",
+      "text": "NPC追逐。",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "chase",
+      "activation": "base",
+      "module": "play",
+      "branch": ""
+    },
+    {
+      "id": "B052",
+      "text": "NPC在场馆规则允许范围内的近距离贴脸惊吓。",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "close_scare",
+      "activation": "base",
+      "module": "play",
+      "branch": ""
+    },
+    {
+      "id": "B053",
+      "text": "在恐怖情境下独自完成任务。",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "solo_task",
+      "activation": "base",
+      "module": "play",
+      "branch": ""
+    },
+    {
+      "id": "B054",
+      "text": "突然出现的人影或声音惊吓。",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "jump_scare",
+      "activation": "base",
+      "module": "play",
+      "branch": ""
+    },
+    {
+      "id": "B055",
+      "text": "黑暗环境中的活动。",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "darkness",
+      "activation": "base",
+      "module": "play",
+      "branch": ""
+    },
+    {
+      "id": "B056",
+      "text": "面对令你害怕的任务，你通常希望怎样安排？",
+      "input": "one",
+      "option_set": "B056",
+      "reverse": false,
+      "scale": "support_need",
+      "activation": "base",
+      "module": "play",
+      "branch": ""
+    },
+    {
+      "id": "E001",
+      "text": "角色面临失去、告别或艰难选择时，我容易跟着他的处境产生情绪起伏。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "story_emotion",
+      "activation": "base",
+      "module": "emotion",
+      "branch": ""
+    },
+    {
+      "id": "E002",
+      "text": "即使能理解角色的处境，观看现场剧情时，我的情绪通常仍比较平稳。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "story_emotion",
+      "activation": "base",
+      "module": "emotion",
+      "branch": ""
+    },
+    {
+      "id": "E003",
+      "text": "现场演绎中的离别、牺牲或重逢情节，常会让我眼眶发热或落泪。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "story_tears",
+      "activation": "base",
+      "module": "emotion",
+      "branch": ""
+    },
+    {
+      "id": "E004",
+      "text": "剧情即使打动了我，我在现场通常也不容易掉眼泪。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "story_tears",
+      "activation": "base",
+      "module": "emotion",
+      "branch": ""
+    },
+    {
+      "id": "H001",
+      "text": "即使会害怕，如果需要有人先进入任务区域，我通常仍敢先走。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "D",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H002",
+      "text": "经过可能突然出现NPC的通道时，如果需要我走在最后，我通常会因为害怕而拒绝。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "D",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H003",
+      "text": "还没有被真正吓到，只是等待NPC可能出现，我心里就已经很害怕。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "F",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H004",
+      "text": "NPC突然接近时，我经常忍不住尖叫或大声喊队友。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "E",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H005",
+      "text": "在同一类惊吓情境、任务适合身体条件且不包含明确拒绝项目时，如果没人陪，你更常怎样做？",
+      "input": "one",
+      "option_set": "H005",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H006",
+      "text": "在刚才同一类情境中，你内心更常是什么状态？",
+      "input": "one",
+      "option_set": "H006",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H007",
+      "text": "在刚才同一类情境中，你受惊时更常如何表达？",
+      "input": "one",
+      "option_set": "H007",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C"
+    },
+    {
+      "id": "H008",
+      "text": "综合同一情境，以下哪种反应更接近你通常的表现？",
+      "input": "one",
+      "option_set": "H008",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "C",
+      "depends_on": [
+        "H005"
+      ]
+    },
+    {
+      "id": "H009",
+      "text": "对短距离快速跑动，你通常是什么态度？",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "sprint",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H010",
+      "text": "对多次跑动或持续活动，你通常是什么态度？",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "repeated_movement",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H011",
+      "text": "对蹲行、爬行类动作，你通常是什么态度？",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "crouch_crawl",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H012",
+      "text": "对场馆提前说明的身体接触，你通常是什么态度？",
+      "input": "accept",
+      "option_set": "ACCEPT",
+      "reverse": false,
+      "scale": "contact",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H013",
+      "text": "如果有NPC追逐，你更希望怎样安排？",
+      "input": "one",
+      "option_set": "H013",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H014",
+      "text": "本次想优先寻找哪种刺激强度？",
+      "input": "one",
+      "option_set": "H014",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H015",
+      "text": "本次想优先寻找哪种活动量？",
+      "input": "one",
+      "option_set": "H015",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H016",
+      "text": "你希望用哪种方式处理超出预期的惊吓？",
+      "input": "one",
+      "option_set": "H016",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "S"
+    },
+    {
+      "id": "H017",
+      "text": "关键演绎期间，你希望队友怎样交流？",
+      "input": "one",
+      "option_set": "H017",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H018",
+      "text": "你自己最希望在哪个时段玩现实梗？",
+      "input": "one",
+      "option_set": "H018",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H019",
+      "text": "本场你希望获得多少直接接戏机会？",
+      "input": "one",
+      "option_set": "H019",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H020",
+      "text": "有其他玩家也想接同一段互动时，你愿意轮流吗？",
+      "input": "one",
+      "option_set": "H020",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H021",
+      "text": "严肃独白中想到一个现实笑点，你更常怎样做？",
+      "input": "one",
+      "option_set": "H021",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H022",
+      "text": "NPC把话题引回故事时，你更愿意怎样继续？",
+      "input": "one",
+      "option_set": "H022",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H023",
+      "text": "有人明确说“我想安静看完这段”时，你会怎样做？",
+      "input": "one",
+      "option_set": "H023",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H024",
+      "text": "你是否愿意本场约定“关键演绎保持故事氛围，剧外玩梗放到同意的时段”？",
+      "input": "one",
+      "option_set": "H024",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "N"
+    },
+    {
+      "id": "H025",
+      "text": "如果队友需要陪同，你本场愿意提供哪种支持？",
+      "input": "one",
+      "option_set": "H025",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H026",
+      "text": "自己需要支持时，你希望对方怎样帮助？",
+      "input": "one",
+      "option_set": "H026",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H027",
+      "text": "两个人都想参与的环节，你更希望怎样分配？",
+      "input": "one",
+      "option_set": "H027",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H028",
+      "text": "一方想探索、另一方想推进时，你更希望怎样安排？",
+      "input": "one",
+      "option_set": "H028",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H029",
+      "text": "提供陪同时，你本场愿意承担多长时间？",
+      "input": "one",
+      "option_set": "H029",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H030",
+      "text": "如果同时有两位队友需要你去不同房间陪同，你希望怎样处理？",
+      "input": "one",
+      "option_set": "H030",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H031",
+      "text": "有人明确表示“暂停，我不想继续”时，你通常怎样做？",
+      "input": "one",
+      "option_set": "H031",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H032",
+      "text": "你是否愿意在开场前确认自己的任务、陪同对象和暂停方式？",
+      "input": "one",
+      "option_set": "H032",
+      "reverse": false,
+      "scale": "",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "T"
+    },
+    {
+      "id": "H033",
+      "text": "熟悉角色背景后，如果NPC向我开放对话，我希望多回应几轮。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "interaction",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H034",
+      "text": "即使知道该说什么，我仍更愿意把主要对话留给别人。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "interaction",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H035",
+      "text": "如果只能保留一个环节，我更想保留完整的人物故事。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "focus",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H036",
+      "text": "即使故事不错，我也更希望增加能亲手操作的任务。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "focus",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H037",
+      "text": "比起自由寻找方向，我更希望每个阶段都有清楚目标。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "route",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H038",
+      "text": "即使主线已经明确，我也想尝试被允许的额外路线。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "route",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H039",
+      "text": "假设没有跑动，我仍期待持续一些的恐怖压迫氛围。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": false,
+      "scale": "intensity",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    },
+    {
+      "id": "H040",
+      "text": "即使完全不用做任务，我也更偏好温和而非持续紧张的氛围。",
+      "input": "likert",
+      "option_set": "L5",
+      "reverse": true,
+      "scale": "intensity",
+      "activation": "hidden",
+      "module": "branch",
+      "branch": "P"
+    }
+  ]
+}

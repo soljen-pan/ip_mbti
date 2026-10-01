@@ -1,0 +1,11 @@
+.DS_Store
+.env
+data/
+.gocache/
+.gomodcache/
+apps/api/tmp/
+apps/miniapp/node_modules/
+apps/miniapp/dist/
+apps/miniapp/.taro/
+apps/miniapp/.swc/
+*.log

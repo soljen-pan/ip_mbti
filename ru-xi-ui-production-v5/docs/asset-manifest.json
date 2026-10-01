@@ -1,0 +1,20 @@
+{
+  "version": "5.1",
+  "rules": ["image layers contain neither dynamic text nor business state", "character illustration uses contain, never as full-screen wallpaper", "root tab icons and all texts are UI components", "P0 preview assets may be replaced by approved final persona resources"],
+  "assets": [
+    {"path":"assets/backgrounds/folder-cream.png","type":"PNG","origin":"regenerated blank folder from approved mockup","use":"home guest pale dossier hero","layout":"335 x 306 logical px at baseline, stretch only inside fixed hero, do not put long dynamic copy into it","official":false},
+    {"path":"assets/backgrounds/folder-blue.svg","type":"SVG","origin":"editable geometric reconstruction","use":"home signed in-progress pale blue dossier background","layout":"screen-width-minus-28, height 306 logical px; transform into supported miniapp PNG if required"},
+    {"path":"assets/backgrounds/folder-paper-plain.svg","type":"SVG","origin":"editable geometry","use":"optional branch / result card background, no baked type","layout":"free-scale within bounded card"},
+    {"path":"assets/illustrations/home-locked-duo.png","type":"transparent PNG","origin":"secondary creation from approved twin-ghost mockup","use":"guest home hero foreground","fit":"contain; duo always both visible","official":false},
+    {"path":"assets/illustrations/home-locked-duo@2x.webp","type":"transparent WebP","origin":"optimized from PNG","use":"size-conscious foreground when platform supports image rendering"},
+    {"path":"assets/illustrations/home-progress-duo.png","type":"transparent PNG","origin":"secondary creation from approved twin-ghost mockup","use":"signed draft home hero foreground","fit":"contain; duo always both visible","official":false},
+    {"path":"assets/illustrations/home-progress-duo@2x.webp","type":"transparent WebP","origin":"optimized from PNG","use":"size-conscious foreground when platform supports image rendering"},
+    {"path":"assets/illustrations/result-storywalker-reference-cutout.png","type":"transparent PNG","origin":"user-supplied ADVC original sheet, cropped for example result","use":"PREVIEW sample ADVC only; never generic result fallback for other codes","official":false},
+    {"path":"assets/illustrations/ip-wordmark-transparent.png","type":"transparent PNG","origin":"user-supplied new IP board, section 02 isolated","use":"品牌联名、加载封面、关于页面：确保入戏档案产品名和IP名不混淆","official":true},
+    {"path":"assets/icons/ghost.svg","type":"SVG","origin":"editable vector","use":"status and empty state icon","miniapp":"convert to local supported PNG if necessary"},
+    {"path":"assets/icons/folder.svg","type":"SVG","origin":"editable vector","use":"folder icon","miniapp":"convert to local supported PNG if necessary"},
+    {"path":"reference/approved-design.png","type":"PNG","origin":"user-approved layout effect","use":"four-screen geometry reference; old orange accent superseded by purple IP"},
+    {"path":"reference/ip-brand-palette.png","type":"PNG","origin":"user-supplied branding board","use":"authoritative palette and IP reference"}
+  ],
+  "requiredFromUserBeforeFinalLaunch": ["final personalized persona images for each released code, K/R presentation and courage state", "merchant theme covers and rights evidence", "approved production logo asset if higher resolution than supplied board is needed"]
+}

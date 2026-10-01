@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: docker.m.daocloud.io/library/postgres:16-alpine
+    environment:
+      POSTGRES_USER: ruxi
+      POSTGRES_PASSWORD: ruxi
+      POSTGRES_DB: ruxi
+    ports:
+      - "5432:5432"
+    volumes:
+      - ruxi_pg:/var/lib/postgresql/data
+
+  api:
+    build: ./apps/api
+    environment:
+      HTTP_ADDR: ":8080"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  web:
+    image: docker.m.daocloud.io/library/nginx:1.27-alpine
+    ports:
+      - "8090:80"
+    volumes:
+      - ./apps/miniapp/dist:/usr/share/nginx/html:ro
+
+volumes:
+  ruxi_pg:

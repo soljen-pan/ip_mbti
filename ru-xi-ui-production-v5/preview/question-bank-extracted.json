@@ -1,0 +1,870 @@
+{
+  "B001": {
+    "id": "B001",
+    "text": "NPC向全队开放提问时，我通常想主动接话。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction",
+      "+"
+    ]
+  },
+  "B002": {
+    "id": "B002",
+    "text": "有可选的角色扮演环节时，我希望有自己的表达机会。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction",
+      "+"
+    ]
+  },
+  "B003": {
+    "id": "B003",
+    "text": "我享受与NPC来回对话，让互动持续一会儿。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction",
+      "+"
+    ]
+  },
+  "B004": {
+    "id": "B004",
+    "text": "即使有充分发言机会，我也更喜欢在旁观察别人如何互动。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction",
+      "−"
+    ]
+  },
+  "B005": {
+    "id": "B005",
+    "text": "相比承担长段角色对话，我更喜欢不需要频繁开口的参与方式。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction",
+      "−"
+    ]
+  },
+  "B006": {
+    "id": "B006",
+    "text": "当故事与操作环节需要取舍时，我通常更想完整体验故事。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus",
+      "+"
+    ]
+  },
+  "B007": {
+    "id": "B007",
+    "text": "选择主题时，人物关系和故事设定比机关数量更吸引我。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus",
+      "+"
+    ]
+  },
+  "B008": {
+    "id": "B008",
+    "text": "即使暂时没有操作任务，精彩演绎也能让我满足。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus",
+      "+"
+    ]
+  },
+  "B009": {
+    "id": "B009",
+    "text": "比起较长的演绎，我更希望尽快出现可亲手完成的任务。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus",
+      "−"
+    ]
+  },
+  "B010": {
+    "id": "B010",
+    "text": "如果时间有限，我更愿意多玩一项任务，少看一段非关键演绎。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus",
+      "−"
+    ]
+  },
+  "B011": {
+    "id": "B011",
+    "text": "明确知道下一步目标，会让我更享受过程。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route",
+      "+"
+    ]
+  },
+  "B012": {
+    "id": "B012",
+    "text": "相比同时开放多个方向，我更喜欢线索逐步展开的路线。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route",
+      "+"
+    ]
+  },
+  "B013": {
+    "id": "B013",
+    "text": "主线与可选探索同时出现时，我通常更想先推进主线。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route",
+      "+"
+    ]
+  },
+  "B014": {
+    "id": "B014",
+    "text": "在明确允许探索的区域，我喜欢寻找主线之外的发现。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route",
+      "−"
+    ]
+  },
+  "B015": {
+    "id": "B015",
+    "text": "可以自行决定任务顺序，会增加我的乐趣。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route",
+      "−"
+    ]
+  },
+  "B016": {
+    "id": "B016",
+    "text": "在场馆和身体条件允许时，我通常想选择较刺激的体验档位。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity",
+      "+"
+    ]
+  },
+  "B017": {
+    "id": "B017",
+    "text": "紧张和压迫的过程本身就是我期待的乐趣。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity",
+      "+"
+    ]
+  },
+  "B018": {
+    "id": "B018",
+    "text": "即使不用跑动，我也喜欢较强的恐怖氛围。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity",
+      "+"
+    ]
+  },
+  "B019": {
+    "id": "B019",
+    "text": "相比持续紧张，我更喜欢强度温和、可调节的体验。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity",
+      "−"
+    ]
+  },
+  "B020": {
+    "id": "B020",
+    "text": "其他内容相同时，我更愿意选择突发惊吓较少的版本。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity",
+      "−"
+    ]
+  },
+  "B021": {
+    "id": "B021",
+    "text": "假设惊吓可接受，跑动和躲避本身会增加我的乐趣。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement",
+      "+"
+    ]
+  },
+  "B022": {
+    "id": "B022",
+    "text": "同一任务能用静态操作或身体行动完成时，我更想选身体行动。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement",
+      "+"
+    ]
+  },
+  "B023": {
+    "id": "B023",
+    "text": "即使没有恐怖元素，我也喜欢限时移动和躲避的玩法。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement",
+      "+"
+    ]
+  },
+  "B024": {
+    "id": "B024",
+    "text": "即使不会害怕、也不会太累，我仍更愿意选择少跑动的版本。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement",
+      "−"
+    ]
+  },
+  "B025": {
+    "id": "B025",
+    "text": "其他内容相同时，我更愿意选择整场活动量较低的版本。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement",
+      "−"
+    ]
+  },
+  "B026": {
+    "id": "B026",
+    "text": "即使暂时没有我的任务，我也会持续关注人物之间发生了什么。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "immersion",
+      "+"
+    ]
+  },
+  "B027": {
+    "id": "B027",
+    "text": "我喜欢从自己扮演角色的处境理解事件。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "immersion",
+      "+"
+    ]
+  },
+  "B028": {
+    "id": "B028",
+    "text": "体验过程中，我通常很少产生角色代入感。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "immersion",
+      "−"
+    ]
+  },
+  "B029": {
+    "id": "B029",
+    "text": "即使演绎很吸引人，我仍更习惯作为故事外的旁观者。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "immersion",
+      "−"
+    ]
+  },
+  "B030": {
+    "id": "B030",
+    "text": "发现关键线索时，我愿意及时与队友分享。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "cooperation",
+      "+"
+    ]
+  },
+  "B031": {
+    "id": "B031",
+    "text": "我和队友都想参加同一环节时，我愿意协商或轮流。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "cooperation",
+      "+"
+    ]
+  },
+  "B032": {
+    "id": "B032",
+    "text": "即使别人也想尝试，我仍更想自己连续完成喜欢的互动。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "cooperation",
+      "−"
+    ]
+  },
+  "B033": {
+    "id": "B033",
+    "text": "调整玩法会减少我的乐趣时，我通常不太愿意为共同节奏作调整。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "cooperation",
+      "−"
+    ]
+  },
+  "B034": {
+    "id": "B034",
+    "text": "与NPC对话时，我喜欢按自己在故事中的身份回应。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "narrative",
+      "+"
+    ]
+  },
+  "B035": {
+    "id": "B035",
+    "text": "即使想开玩笑，我也更喜欢使用符合当前世界观的说法。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "narrative",
+      "+"
+    ]
+  },
+  "B036": {
+    "id": "B036",
+    "text": "对我来说，用现实生活和网络中的梗回应NPC是重要乐趣。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "narrative",
+      "−"
+    ]
+  },
+  "B037": {
+    "id": "B037",
+    "text": "相比一直保持角色身份，我更喜欢穿插现实中的吐槽。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "narrative",
+      "−"
+    ]
+  },
+  "B038": {
+    "id": "B038",
+    "text": "想到题外话时，我通常愿意等关键演绎结束后再分享。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "timing",
+      "+"
+    ]
+  },
+  "B039": {
+    "id": "B039",
+    "text": "NPC将话题引回故事时，我愿意跟随这个方向继续互动。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "timing",
+      "+"
+    ]
+  },
+  "B040": {
+    "id": "B040",
+    "text": "队友表示想认真看完这段时，我愿意暂停插话。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "timing",
+      "+"
+    ]
+  },
+  "B041": {
+    "id": "B041",
+    "text": "任务需要我独自进入有恐怖氛围的房间时，即使没人陪同，我通常也会接下任务。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "D独立行动",
+      "+"
+    ]
+  },
+  "B042": {
+    "id": "B042",
+    "text": "队友因为害怕不敢做任务时，我通常敢陪着对方进入任务区域。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "D",
+      "+"
+    ]
+  },
+  "B043": {
+    "id": "B043",
+    "text": "队伍经过可能出现NPC的区域时，我会因为害怕而尽量待在前后都有人的位置。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "D",
+      "−"
+    ]
+  },
+  "B044": {
+    "id": "B044",
+    "text": "即使任务步骤已经清楚，只要需要独自面对惊吓，我通常还是不敢接。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "D",
+      "−"
+    ]
+  },
+  "B045": {
+    "id": "B045",
+    "text": "NPC突然出现时，我内心会明显害怕，即使外表没有表现出来。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "F内心害怕",
+      "+"
+    ]
+  },
+  "B046": {
+    "id": "B046",
+    "text": "一次突然的声音惊吓结束后，我通常还会害怕一阵子。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "F",
+      "+"
+    ]
+  },
+  "B047": {
+    "id": "B047",
+    "text": "知道是密室表演时，即使NPC努力营造压迫感，我心里通常也很平静。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "F",
+      "−"
+    ]
+  },
+  "B048": {
+    "id": "B048",
+    "text": "突然被吓到时，我的第一反应经常是叫出声。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "E受惊发声",
+      "+"
+    ]
+  },
+  "B049": {
+    "id": "B049",
+    "text": "昏暗环境中出现一点意外声响，我也容易忍不住叫出来。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "E",
+      "+"
+    ]
+  },
+  "B050": {
+    "id": "B050",
+    "text": "即使心里很害怕，我也常常安静、僵住或想说却说不出来。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "E",
+      "−"
+    ]
+  },
+  "B051": {
+    "id": "B051",
+    "text": "NPC追逐。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT",
+      "chase"
+    ]
+  },
+  "B052": {
+    "id": "B052",
+    "text": "NPC在场馆规则允许范围内的近距离贴脸惊吓。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT",
+      "close_scare"
+    ]
+  },
+  "B053": {
+    "id": "B053",
+    "text": "在恐怖情境下独自完成任务。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT",
+      "solo_task"
+    ]
+  },
+  "B054": {
+    "id": "B054",
+    "text": "突然出现的人影或声音惊吓。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT",
+      "jump_scare"
+    ]
+  },
+  "B055": {
+    "id": "B055",
+    "text": "黑暗环境中的活动。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT",
+      "darkness"
+    ]
+  },
+  "B056": {
+    "id": "B056",
+    "text": "面对令你害怕的任务，你通常希望怎样安排？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：independent独立尝试/accompany希望有人陪同/as_needed先尝试，必要时求助/unknown",
+      "support_need"
+    ]
+  },
+  "H001": {
+    "id": "H001",
+    "text": "即使会害怕，如果需要有人先进入任务区域，我通常仍敢先走。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "L5；D补充正向"
+    ]
+  },
+  "H002": {
+    "id": "H002",
+    "text": "经过可能突然出现NPC的通道时，如果需要我走在最后，我通常会因为害怕而拒绝。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "L5；D补充反向"
+    ]
+  },
+  "H003": {
+    "id": "H003",
+    "text": "还没有被真正吓到，只是等待NPC可能出现，我心里就已经很害怕。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "L5；F补充正向"
+    ]
+  },
+  "H004": {
+    "id": "H004",
+    "text": "NPC突然接近时，我经常忍不住尖叫或大声喊队友。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "L5；E补充正向"
+    ]
+  },
+  "H005": {
+    "id": "H005",
+    "text": "在同一类惊吓情境、任务适合身体条件且不包含明确拒绝项目时，如果没人陪，你更常怎样做？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：independent即使害怕也独自接下尝试/accompanied需要陪同才敢做，否则倾向不接/unknown；一级身份复核"
+    ]
+  },
+  "H006": {
+    "id": "H006",
+    "text": "在刚才同一类情境中，你内心更常是什么状态？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：calm基本不怕/fear会明显害怕/mixed随环节变化/unknown；解释用"
+    ]
+  },
+  "H007": {
+    "id": "H007",
+    "text": "在刚才同一类情境中，你受惊时更常如何表达？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：vocal叫出声/quiet安静或失声/mixed两种都常见/unknown；解释用"
+    ]
+  },
+  "H008": {
+    "id": "H008",
+    "text": "综合同一情境，以下哪种反应更接近你通常的表现？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE；若H005=independent，仅显示G心里基本不怕也不太叫，任务照做/M会怕或会叫，但仍敢做任务；若H005=accompanied，仅显示S害怕时容易叫出声，需要陪同/Q害怕时安静或失声，需要陪同；另unknown。固定显示文案，不展示巨坦等身份名"
+    ]
+  },
+  "H009": {
+    "id": "H009",
+    "text": "对短距离快速跑动，你通常是什么态度？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT；sprint"
+    ]
+  },
+  "H010": {
+    "id": "H010",
+    "text": "对多次跑动或持续活动，你通常是什么态度？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT；repeated_movement"
+    ]
+  },
+  "H011": {
+    "id": "H011",
+    "text": "对蹲行、爬行类动作，你通常是什么态度？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT；crouch_crawl；实际预订仍分拆具体动作"
+    ]
+  },
+  "H012": {
+    "id": "H012",
+    "text": "对场馆提前说明的身体接触，你通常是什么态度？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ACCEPT；contact"
+    ]
+  },
+  "H013": {
+    "id": "H013",
+    "text": "如果有NPC追逐，你更希望怎样安排？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：none不参加/optional可选择参加/required接受本人必做/unknown；chase_mode"
+    ]
+  },
+  "H014": {
+    "id": "H014",
+    "text": "本次想优先寻找哪种刺激强度？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：low/medium/high/unknown；desired_intensity"
+    ]
+  },
+  "H015": {
+    "id": "H015",
+    "text": "本次想优先寻找哪种活动量？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：low/medium/high/unknown；desired_movement"
+    ]
+  },
+  "H016": {
+    "id": "H016",
+    "text": "你希望用哪种方式处理超出预期的惊吓？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：reduce事先安排可降低强度/exit需要可退出路径/check先了解具体环节再决定/unknown；adjustment_need"
+    ]
+  },
+  "H017": {
+    "id": "H017",
+    "text": "关键演绎期间，你希望队友怎样交流？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：quiet安静观演/in_world适时剧内回应/open可接受题外评论/unknown；performance_chat"
+    ]
+  },
+  "H018": {
+    "id": "H018",
+    "text": "你自己最希望在哪个时段玩现实梗？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：none不主动玩/break休息或演绎结束/open_interaction开放互动时/anytime任何时段/unknown；joke_window"
+    ]
+  },
+  "H019": {
+    "id": "H019",
+    "text": "本场你希望获得多少直接接戏机会？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：low少量/some适量/high较多/unknown；interaction_demand"
+    ]
+  },
+  "H020": {
+    "id": "H020",
+    "text": "有其他玩家也想接同一段互动时，你愿意轮流吗？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：yes/no/unknown；turn_taking"
+    ]
+  },
+  "H021": {
+    "id": "H021",
+    "text": "严肃独白中想到一个现实笑点，你更常怎样做？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：later结束再说/in_world等开放互动再改成剧内说法/whisper立即小声告诉队友/say立即说出来/unknown；joke_timing；小声不自动等于不干扰"
+    ]
+  },
+  "H022": {
+    "id": "H022",
+    "text": "NPC把话题引回故事时，你更愿意怎样继续？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：follow跟随故事/ask_window询问何时可自由聊/continue继续自己的题外话/unknown；redirect_response"
+    ]
+  },
+  "H023": {
+    "id": "H023",
+    "text": "有人明确说“我想安静看完这段”时，你会怎样做？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：pause暂停题外交流/discuss_after结束再协商/continue继续表达/unknown；quiet_response"
+    ]
+  },
+  "H024": {
+    "id": "H024",
+    "text": "你是否愿意本场约定“关键演绎保持故事氛围，剧外玩梗放到同意的时段”？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：yes/no/unknown；narrative_agreement_intent"
+    ]
+  },
+  "H025": {
+    "id": "H025",
+    "text": "如果队友需要陪同，你本场愿意提供哪种支持？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：accompany愿意陪同/lead_rear愿意带路或殿后/check_only只愿意帮忙确认信息/none暂不提供/unknown；support_offer，后续协议可细化"
+    ]
+  },
+  "H026": {
+    "id": "H026",
+    "text": "自己需要支持时，你希望对方怎样帮助？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：always任务期间一直陪同/checkpoints在关键位置等候/on_request我求助时再来/none不需要/unknown；support_style"
+    ]
+  },
+  "H027": {
+    "id": "H027",
+    "text": "两个人都想参与的环节，你更希望怎样分配？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：rotate轮流/choose分开选择/first优先我参与/unknown；allocation_style"
+    ]
+  },
+  "H028": {
+    "id": "H028",
+    "text": "一方想探索、另一方想推进时，你更希望怎样安排？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：timebox约定探索时间/split场馆允许时分工/uniform保持全队一致/unknown；pace_policy"
+    ]
+  },
+  "H029": {
+    "id": "H029",
+    "text": "提供陪同时，你本场愿意承担多长时间？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：one只一个事先约定任务/selected几个指定任务/throughout可商量全程/none不提供/unknown；support_scope；不是容量数值"
+    ]
+  },
+  "H030": {
+    "id": "H030",
+    "text": "如果同时有两位队友需要你去不同房间陪同，你希望怎样处理？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：reschedule先协商错开或更换安排/one只承诺一个/all声称都可以/unknown；concurrency_awareness；all不生成可执行双重分配"
+    ]
+  },
+  "H031": {
+    "id": "H031",
+    "text": "有人明确表示“暂停，我不想继续”时，你通常怎样做？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：stop先停下再协商/check_once确认一次后尊重/keep_persuading继续劝说/unknown；stop_response"
+    ]
+  },
+  "H032": {
+    "id": "H032",
+    "text": "你是否愿意在开场前确认自己的任务、陪同对象和暂停方式？",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "ONE：yes/no/unknown；plan_intent"
+    ]
+  },
+  "H033": {
+    "id": "H033",
+    "text": "熟悉角色背景后，如果NPC向我开放对话，我希望多回应几轮。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction +",
+      "接戏情境澄清"
+    ]
+  },
+  "H034": {
+    "id": "H034",
+    "text": "即使知道该说什么，我仍更愿意把主要对话留给别人。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "interaction −",
+      "同上"
+    ]
+  },
+  "H035": {
+    "id": "H035",
+    "text": "如果只能保留一个环节，我更想保留完整的人物故事。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus +",
+      "剧情取舍澄清"
+    ]
+  },
+  "H036": {
+    "id": "H036",
+    "text": "即使故事不错，我也更希望增加能亲手操作的任务。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "focus −",
+      "同上"
+    ]
+  },
+  "H037": {
+    "id": "H037",
+    "text": "比起自由寻找方向，我更希望每个阶段都有清楚目标。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route +",
+      "路线澄清"
+    ]
+  },
+  "H038": {
+    "id": "H038",
+    "text": "即使主线已经明确，我也想尝试被允许的额外路线。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "route −",
+      "同上"
+    ]
+  },
+  "H039": {
+    "id": "H039",
+    "text": "假设没有跑动，我仍期待持续一些的恐怖压迫氛围。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity +",
+      "刺激与运动分离"
+    ]
+  },
+  "H040": {
+    "id": "H040",
+    "text": "即使完全不用做任务，我也更偏好温和而非持续紧张的氛围。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "intensity −",
+      "同上"
+    ]
+  },
+  "H041": {
+    "id": "H041",
+    "text": "假设没有NPC和恐怖元素，移动与躲避仍会增加我的乐趣。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement +",
+      "运动与恐惧分离"
+    ]
+  },
+  "H042": {
+    "id": "H042",
+    "text": "即使活动量在我的体力范围内，我仍更偏好静态参与。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "movement −",
+      "同上"
+    ]
+  },
+  "H043": {
+    "id": "H043",
+    "text": "即使不需要我开口，我仍愿意从角色处境体会故事中的情绪。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "immersion +",
+      "入戏和互动分离，不回写雷达分"
+    ]
+  },
+  "H044": {
+    "id": "H044",
+    "text": "即使我特别想参加某个环节，也愿意和同样想参加的人轮流。",
+    "source": "v2.0-dev-spec",
+    "option_hint": [
+      "cooperation +",
+      "轮流意愿澄清，不认证可靠性"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "version": "5.1.1-flat-buttons",
+  "baseViewportLogicalWidth": 375,
+  "source": "user-supplied 不听话小分队 IP board",
+  "palette": {
+    "ink": "#111111",
+    "bone": "#F8F8F8",
+    "paper": "#FCF9EF",
+    "brandPurple": "#7B5A8F",
+    "brandPurpleTextAndButton": "#693E7D",
+    "ghostSkin": "#DCE5F3",
+    "accentPink": "#D964E3",
+    "palePurple": "#F2E9F6",
+    "line": "#D7D2CD",
+    "secondaryText": "#626066"
+  },
+  "contrastNotes": {
+    "brandPurpleOnBone": 5.34,
+    "buttonPurpleOnWhite": 8.12,
+    "pinkOnBone": 2.87,
+    "pinkUsage": "decoration only; not body text"
+  },
+  "typographyPx": {
+    "h1": 28,
+    "h2": 23,
+    "section": 17,
+    "body": 15,
+    "hint": 11,
+    "question": 21
+  },
+  "spacingPx": [
+    4,
+    8,
+    12,
+    14,
+    16,
+    20,
+    24,
+    32
+  ],
+  "componentsPx": {
+    "rootPagePadding": 14,
+    "primaryButtonMinHeight": 48,
+    "optionMinHeight": 53,
+    "rootTabbar": 65,
+    "childNav": 52,
+    "heroFolderHeightAt375": 306,
+    "resultCharacterAreaHeight": 232
+  },
+  "renderRules": {
+    "doNotBakeTextIntoImage": true,
+    "formAndQuizBackground": "flat bone/cream",
+    "safeAreas": "runtime",
+    "characterArtwork": "transparent separate layer",
+    "uiState": "code driven"
+  },
+  "buttons": {
+    "style": "flat",
+    "radiusPx": 8,
+    "minHeightPx": 48,
+    "primary": {
+      "background": "#693E7D",
+      "text": "#FFFFFF",
+      "border": "none",
+      "pressedBackground": "#59316E"
+    },
+    "secondary": {
+      "background": "#FCF9EF",
+      "text": "#111111",
+      "border": "1px solid #CCC5CE",
+      "pressedBackground": "#ECE3F0"
+    },
+    "disabled": {
+      "background": "#E7E3E8",
+      "text": "#817A82",
+      "border": "none"
+    },
+    "focusOutline": "2px solid #693E7D",
+    "shadow": "none",
+    "pressTranslation": "none",
+    "pressDurationMs": 140,
+    "loading": "keep button width, spinner plus 处理中"
+  }
+}

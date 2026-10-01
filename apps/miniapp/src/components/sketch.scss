@@ -1,0 +1,195 @@
+.art-slot {
+  width: 132px;
+  height: 156px;
+  border-radius: 18px;
+  border: 1.5px dashed var(--purple);
+  background:
+    linear-gradient(180deg, rgba(216, 243, 94, 0.35), transparent 42%),
+    var(--purple-soft);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.art-slot-mark {
+  background: var(--card);
+  color: var(--purple);
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 4px 8px;
+}
+
+.npc {
+  --skin: #8e9aab;
+  position: relative;
+  width: 108px;
+  height: 132px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.npc-card { width: 100%; height: 108px; }
+.npc-mini { width: 64px; height: 80px; border-radius: 12px; }
+.npc-corner { width: 44px; height: 48px; border-radius: 12px; }
+.npc-empty { width: 108px; height: 120px; }
+
+.npc-wash-purple { background: #efeaff; }
+.npc-wash-mint { background: #e7f6f1; }
+.npc-wash-coral { background: #fde8e3; }
+.npc-wash-lime { background: #f3f8d4; }
+.npc-wash-paper { background: #f3f1ea; }
+.npc-wash-ink { background: #eceaf3; }
+
+.npc-head,
+.npc-arm,
+.npc-leg {
+  background: var(--skin);
+}
+
+.npc-head {
+  position: absolute;
+  z-index: 2;
+  left: 22%;
+  top: 8%;
+  width: 56%;
+  height: 42%;
+  border-radius: 46% 46% 40% 40%;
+}
+
+.npc-face-long .npc-head { height: 50%; width: 48%; left: 26%; border-radius: 40% 40% 34% 34%; }
+.npc-face-square .npc-head { border-radius: 18%; width: 52%; left: 24%; }
+.npc-face-wide .npc-head { width: 70%; left: 15%; height: 36%; top: 12%; border-radius: 42%; }
+.npc-face-round .npc-head { border-radius: 50%; }
+
+.npc-eye {
+  position: absolute;
+  top: 38%;
+  width: 14%;
+  height: 18%;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.npc-eye-l { left: 24%; }
+.npc-eye-r { right: 24%; }
+
+.npc-eyes-stretch .npc-eye { height: 28%; top: 30%; }
+.npc-eyes-tremble .npc-mouth { transform: rotate(-8deg); }
+.npc-eyes-aside .npc-head { transform: translateX(8%); }
+.npc-eyes-crook .npc-mouth { transform: rotate(16deg); width: 28%; }
+.npc-eyes-block .npc-mouth { width: 34%; height: 10%; border-radius: 2px; }
+.npc-eyes-brow .npc-eye-l { transform: rotate(-18deg); height: 12%; }
+.npc-eyes-glance .npc-eye { height: 12%; }
+.npc-eyes-think .npc-eye { height: 10%; border-radius: 40%; }
+.npc-eyes-fly .npc-eye { top: 22%; height: 14%; }
+.npc-eyes-flat .npc-eye { height: 8%; border-radius: 2px; }
+.npc-eyes-pin .npc-eye { width: 8%; height: 10%; }
+.npc-eyes-pull .npc-head { height: 54%; }
+.npc-eyes-focus .npc-eye { width: 10%; height: 16%; }
+.npc-eyes-squish .npc-eye-r { height: 10%; }
+.npc-eyes-still .npc-eye { height: 12%; }
+.npc-eyes-lazy .npc-eye { height: 8%; top: 46%; }
+
+.npc-mouth {
+  position: absolute;
+  left: 36%;
+  bottom: 18%;
+  width: 28%;
+  height: 8%;
+  border-bottom: 2px solid var(--ink);
+  border-radius: 0 0 8px 8px;
+}
+
+.npc-mood-scream .npc-mouth {
+  height: 18%;
+  border: 2px solid var(--ink);
+  background: var(--card);
+  bottom: 14%;
+}
+.npc-mood-quiet .npc-mouth { width: 12%; left: 44%; }
+.npc-mood-quiet .npc-eye { width: 18%; height: 22%; }
+.npc-mood-act .npc-mouth { width: 22%; height: 12%; border: 2px solid var(--ink); }
+.npc-mood-calm .npc-mouth { transform: none; width: 20%; }
+
+.npc-body {
+  position: absolute;
+  left: 30%;
+  top: 46%;
+  width: 40%;
+  height: 28%;
+  border-radius: 10px 12px 8px 8px;
+  background: var(--purple);
+  z-index: 1;
+}
+
+.npc-pose-k .npc-body { transform: rotate(-8deg) translateX(4px); }
+.npc-pose-r .npc-body { transform: none; }
+
+.npc-arm {
+  position: absolute;
+  top: 18%;
+  width: 18%;
+  height: 70%;
+  border-radius: 8px;
+}
+.npc-arm-l { left: -16%; }
+.npc-arm-r { right: -16%; }
+
+.npc-leg {
+  position: absolute;
+  top: 76%;
+  width: 12%;
+  height: 18%;
+  border-radius: 6px;
+  z-index: 1;
+}
+.npc-leg-l { left: 36%; }
+.npc-leg-r { left: 52%; }
+
+.npc-thing {
+  position: absolute;
+  z-index: 3;
+  left: 8%;
+  top: 58%;
+  width: 18%;
+  height: 22%;
+  background: var(--lime);
+  border-radius: 3px;
+}
+
+.npc-thing-bow .npc-thing { left: 30%; top: 38%; width: 40%; height: 12%; border-radius: 2px; background: var(--coral); }
+.npc-thing-bag .npc-thing { left: 6%; top: 62%; width: 26%; height: 22%; background: var(--mint); border: 2px solid var(--ink); }
+.npc-thing-hat .npc-thing { left: 22%; top: 2%; width: 56%; height: 14%; background: var(--ink); border-radius: 10px 12px 2px 2px; }
+.npc-thing-script .npc-thing { left: 6%; top: 58%; width: 24%; height: 28%; background: var(--card); border: 2px solid var(--ink); }
+.npc-eyes-stretch .npc-mouth { width: 14%; left: 43%; height: 18%; border: 2px solid var(--ink); border-radius: 40%; background: transparent; }
+.npc-eyes-aside .npc-mouth { width: 18%; transform: rotate(-12deg); }
+.npc-thing-clip .npc-thing { background: var(--card); border: 2px solid var(--ink); height: 26%; }
+.npc-thing-pen .npc-thing { width: 6%; height: 28%; left: 12%; background: var(--ink); }
+.npc-thing-lean .npc-thing { width: 0; height: 0; background: transparent; }
+.npc-thing-pocket .npc-thing { left: 58%; top: 62%; width: 16%; height: 12%; background: var(--lime); }
+.npc-thing-ticket .npc-thing { background: var(--lime); border-radius: 2px 2px 6px 6px; }
+.npc-thing-seat .npc-thing { left: 22%; top: 78%; width: 56%; height: 10%; background: var(--ink); }
+.npc-thing-scarf .npc-thing { left: 34%; top: 42%; width: 32%; height: 8%; background: var(--mint); }
+.npc-thing-note .npc-thing { background: var(--card); border: 2px solid var(--ink); height: 16%; }
+.npc-thing-vest .npc-thing { left: 34%; top: 50%; width: 32%; height: 18%; background: var(--lime); opacity: 0.9; }
+.npc-thing-glasses .npc-thing { left: 30%; top: 28%; width: 40%; height: 10%; background: transparent; border: 2px solid var(--ink); border-radius: 4px; }
+.npc-thing-lamp .npc-thing { width: 10%; height: 16%; border-radius: 6px; background: var(--lime); }
+.npc-thing-glass .npc-thing { width: 16%; height: 16%; border-radius: 50%; border: 2px solid var(--ink); background: transparent; }
+
+.npc-tickets::before,
+.npc-tickets::after {
+  content: "";
+  position: absolute;
+  bottom: 8%;
+  width: 28%;
+  height: 34%;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 4px;
+  z-index: 4;
+}
+.npc-tickets::before { left: 4%; transform: rotate(-12deg); }
+.npc-tickets::after { right: 4%; transform: rotate(10deg); background: var(--lime); }
